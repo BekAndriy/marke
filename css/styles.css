@@ -24166,7 +24166,7 @@ header {
            -o-transform: none;
               transform: none; }
       .testimonials .slider-testimonials-wrapper .slider-testimonials {
-        padding: 80px;
+        padding: 80px 0;
         position: absolute; }
         .testimonials .slider-testimonials-wrapper .slider-testimonials .item {
           padding: 0; }
@@ -24608,7 +24608,7 @@ header {
   @media all and (max-width: 767px) {
     .about-section {
       padding-bottom: 60px;
-      padding-top: 220px; }
+      padding-top: 260px; }
       .about-section .the-german-federal-e .title {
         padding-top: 0;
         line-height: 46px;
