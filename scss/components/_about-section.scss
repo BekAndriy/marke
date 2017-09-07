@@ -180,8 +180,10 @@
   }
   .question-btn {
     cursor: pointer;
-    position: relative;
-    margin-left: -22px;
+    padding-top: 5px;
+    position: absolute;
+    right: calc(100% + 3px);
+    top: 0;
   }
   .question-btn:before {
     content: '';
@@ -256,6 +258,7 @@
     position: absolute;
     z-index: 1;
     box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.14);
+    background-color: #FFF;
     &.point-1 {
       left: -160px;
       top: 40px;
@@ -305,6 +308,9 @@
       top: 360px;
       animation-delay: .3s;
     }
+    &.point-8, &.point-9, &.point-6, &.point-4, &.point-3, &.point-2 {
+      opacity: .2;
+    }
   }
   @media all and (max-width: 767px) {
     padding-bottom: 60px;
@@ -314,35 +320,37 @@
       line-height: 46px;
       font-size: 32px;
     }
-    .candidate-desc .item .content {
-      padding: 0;
-      position: relative;
-    }
-    .candidate-desc .item .avatar {
-      width: 80px;
-    }
-    .candidate-desc .item .avatar span {
-      padding-top: 100%;
-    }
-    .candidate-desc .item .content .candidate {
-      padding-left: 90px;
-      position: absolute;
-      top: 0px;
-      left: 0;
-      right: 0;
-    }
-    .candidate-desc .item .content .name {
-      padding-top: 3px;
-      padding-left: 90px;
-      line-height: 24px;
-      font-size: 20px;
-      position: absolute;
-      top: 16px;
-      left: 0;
-      right: 0;
-    }
-    .candidate-desc .item .content .description {
-      padding-top: 100px;
+    .candidate-desc .item {
+      .avatar {
+        width: 80px;
+        span {
+          padding-top: 100%;
+        }
+      }
+      .content {
+        padding: 0;
+        position: relative;
+        .candidate {
+          padding-left: 90px;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          right: 0;
+        }
+        .name {
+          padding-top: 3px;
+          padding-left: 90px;
+          line-height: 24px;
+          font-size: 20px;
+          position: absolute;
+          top: 16px;
+          left: 0;
+          right: 0;
+        }
+        .description {
+          padding-top: 100px;
+        }
+      }
     }
     .point {
       display: none;

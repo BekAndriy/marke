@@ -175,5 +175,9 @@
       }
     }
   }
-
+  @media all and (min-width: 1650px) {
+    .item-wrapper .item {
+      max-width: inherit;
+    }
+  }
 }

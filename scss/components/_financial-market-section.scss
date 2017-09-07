@@ -31,6 +31,8 @@
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.46);
+    clear: both;
+    margin-top: 20px;
     &:before {
       content: '';
       position: relative;
@@ -60,7 +62,7 @@
   .question {
     display: none;
     position: absolute;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
     top: calc(100% + 3px);
     max-width: 470px;
@@ -100,6 +102,10 @@
     }
     .top .description {
       padding-bottom: 40px;
+    }
+    .question {
+      left: 50%;
+      top: calc(100% + 8px);
     }
   }
 }
