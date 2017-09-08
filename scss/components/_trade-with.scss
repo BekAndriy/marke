@@ -166,12 +166,20 @@
       background-size: contain;
     }
   }
-  @media all and (max-width: 991px) and (min-width: 768px) {
+  @media all and (max-width: 1280px) and (min-width: 768px) {
+    .col-lg-6 {
+      width: 100%;
+    }
     .item-wrapper .item,
     .item-wrapper:first-child .item{
       margin: 0 auto;
       & > * {
         text-align: center;
+      }
+    }
+    .item-wrapper:first-child .item {
+      .btn {
+        padding-bottom: 20px;
       }
     }
   }

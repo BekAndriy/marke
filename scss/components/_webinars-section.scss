@@ -123,11 +123,11 @@
       padding-bottom: 60px;
     }
   }
-
   .block {
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     position: relative;
+    min-height: 300px;
     &:before {
       content: '';
       display: block;
@@ -197,6 +197,9 @@
   @include sliderArrow();
   @media all and (max-width: 767px) {
     padding-bottom: 40px;
+    .top .description {
+      padding-bottom: 40px;
+    }
     .item .image:before {
       padding-top: 42.42%;
     }
@@ -206,9 +209,9 @@
     .block {
       margin-bottom: 20px;
       max-height: 375px;
-    }
-    .block:before {
-      padding-top: 90%;
+      &:before {
+        padding-top: 90%;
+      }
     }
     .mobile-slider {
       padding-bottom: 80px;
